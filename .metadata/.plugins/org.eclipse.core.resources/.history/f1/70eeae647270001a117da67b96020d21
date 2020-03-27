@@ -1,0 +1,5 @@
+package com.jordanproject.os.common;
+
+public class TransactionResponse {
+
+}

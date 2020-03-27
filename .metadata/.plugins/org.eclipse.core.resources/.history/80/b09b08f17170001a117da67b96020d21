@@ -1,0 +1,5 @@
+package com.jordanproject.os.payment;
+
+public class TransactionRequest {
+
+}

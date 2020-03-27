@@ -1,0 +1,5 @@
+package com.jordanproject.os.dao;
+
+public interface OrderDAO {
+
+}

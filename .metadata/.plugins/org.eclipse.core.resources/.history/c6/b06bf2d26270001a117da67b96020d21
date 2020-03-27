@@ -1,0 +1,5 @@
+package com.jordanproject.ps.controller;
+
+public class PaymentController {
+
+}

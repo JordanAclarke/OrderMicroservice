@@ -1,0 +1,9 @@
+package com.jordanproject.os.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jordanproject.os.model.Order;
+
+public interface OrderDAO extends JpaRepository<Order, Integer>{
+
+}

@@ -1,0 +1,14 @@
+package com.jordanproject.os.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jordanproject.os.dao.OrderDAO;
+
+@Service
+public class OrderService {
+	
+	@Autowired
+	private OrderDAO orderDao;
+
+}

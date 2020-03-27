@@ -1,0 +1,6 @@
+package com.jordanproject.os.model;
+
+@Ent
+public class Model {
+
+}

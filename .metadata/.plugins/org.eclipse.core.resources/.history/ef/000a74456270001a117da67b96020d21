@@ -1,0 +1,5 @@
+package com.jordanproject.ps.service;
+
+public class PaymentService {
+
+}

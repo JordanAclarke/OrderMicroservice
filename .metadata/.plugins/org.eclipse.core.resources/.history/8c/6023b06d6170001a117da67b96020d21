@@ -1,0 +1,5 @@
+package com.jordanproject.ps.dao;
+
+public interface PaymentService {
+
+}

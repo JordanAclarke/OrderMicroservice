@@ -1,0 +1,27 @@
+package com.jordanproject.os.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jordanproject.os.dao.OrderDAO;
+import com.jordanproject.os.model.Order;
+
+@Service
+public class OrderService {
+	
+	@Autowired
+	private OrderDAO orderDao;
+	
+	public Order saveOrder(Order order) {
+	
+		return orderDao.save(order);
+	}
+	
+	public List<Order> getAllOrders() {
+		List<Order> listOfOrders = orderDao.findAll();
+		return listOfOrders;
+	}
+
+}
