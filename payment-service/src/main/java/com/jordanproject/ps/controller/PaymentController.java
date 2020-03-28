@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jordanproject.ps.model.Payment;
 import com.jordanproject.ps.service.PaymentService;
-
+//use API GATEWAY PATH 8084
 @RestController
 @RequestMapping("/payment")
 public class PaymentController {
@@ -28,7 +29,11 @@ public class PaymentController {
 	public Payment savePayment(@RequestBody Payment payment) {
 		return paymentService.savePayment(payment);
 		
-
+	}
+	
+	@GetMapping("/{orderId}")
+	public Payment findPaymentHistoryByOrderId(@PathVariable int orderId) {
+		return paymentService.findPaymentHistoryByOrderId(orderId);
 	}
 
 }

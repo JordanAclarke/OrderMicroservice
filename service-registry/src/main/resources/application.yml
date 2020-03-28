@@ -1,0 +1,6 @@
+# because this is not your client, it is your server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+server:  port: 8761

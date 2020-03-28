@@ -8,4 +8,6 @@ import com.jordanproject.ps.model.Payment;
 @Repository
 public interface PaymentDAO extends JpaRepository<Payment, Integer> {
 
+	Payment findByOrderId(int orderId);
+
 }

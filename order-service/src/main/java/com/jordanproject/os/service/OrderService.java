@@ -26,8 +26,8 @@ public class OrderService {
 		Payment payment = transactionRequest.getPayment();
 		payment.setOrderId(order.getId());
 		payment.setAmount(order.getPrice());
-//		Rest Call
-		Payment paymentResponse = restTemplate.postForObject("http://localhost:8082/payment/addPayment", payment, Payment.class);
+//		Rest Call, when you configure client, you can change the local host to application name
+		Payment paymentResponse = restTemplate.postForObject("http://PAYMENT-SERVICE/payment/addPayment", payment, Payment.class);
 		orderDao.save(order);
 		return new TransactionResponse(order, paymentResponse.getAmount(), paymentResponse.getTransactionId());
 	}

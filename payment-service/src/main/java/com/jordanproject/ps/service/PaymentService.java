@@ -27,4 +27,10 @@ public class PaymentService {
 	public List<Payment> getListOfPayments() {
 		return paymentDao.findAll();
 	}
+
+	public Payment findPaymentHistoryByOrderId(int orderId) {
+		// TODO Auto-generated method stub
+
+		return paymentDao.findByOrderId(orderId);
+	}
 }

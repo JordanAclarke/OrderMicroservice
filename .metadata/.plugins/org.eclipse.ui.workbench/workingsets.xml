@@ -15,4 +15,5 @@
 <item elementID="=payment-service/target\/generated-test-sources\/test-annotations=/optional=/true=/=/maven.pomderived=/true=/=/ignore_optional_problems=/true=/=/m2e-apt=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1585336332944_2" label="Window Working Set" name="Aggregate for window 1585336332944"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1585407776964_3" label="Window Working Set" name="Aggregate for window 1585407776964"/>
 </workingSetManager>

@@ -6,7 +6,16 @@ spring:
     url: jdbc:mysql://localhost:3306/microservicedb
     username: root
     password: root123
-
+  application:    name: ORDER-SERVICE
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
+
+
+eureka:  client:    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+      hostname: localhost
+      
